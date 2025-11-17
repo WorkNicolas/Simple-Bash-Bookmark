@@ -1,14 +1,31 @@
 # Directory Bookmark Script
 
-A lightweight Bash helper to create and use directory “bookmarks” via `bookmark` and its alias `bm`.
+A lightweight helper to create and use directory “bookmarks” via `bookmark` and its alias `bm`.
 
 ## Installation
 
-1. Copy the `.bashrc` content into `~/.bashrc`.
+### Linux (Bash)
+
+1. Copy the Bash `bookmark` function and `alias bm=bookmark` into `~/.bashrc`.
 2. Reload your shell:
 
 ```bash
 source ~/.bashrc
+```
+
+### Windows (PowerShell)
+
+1. Open your PowerShell profile:
+
+```powershell
+notepad $PROFILE
+```
+
+2. Paste the PowerShell `bookmark` function and `Set-Alias bm bookmark` into that file, then save.
+3. Reload the profile:
+
+```powershell
+. $PROFILE
 ```
 
 ## Features
